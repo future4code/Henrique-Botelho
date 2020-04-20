@@ -1,0 +1,126 @@
+.sobre{
+    display: flex; 
+    background-color: #FA9B01;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    padding: 10px;
+}
+
+#mim{
+    font-size: 30px;
+    margin: 1%;
+}
+
+#descricao{
+    font-size: 24px;
+    margin: 10px;
+}
+
+#pro{
+    font-size: 30px;
+}
+
+.lista{
+    margin: 10px;
+    font-size: 24px;
+    width: 40%;
+    height: 100px;
+}
+
+
+.galeria{
+    background-color: white;
+    flex-wrap: wrap;
+    display: flex;
+    /* width: 100%; */
+    margin: auto;
+    justify-content: center;
+    /* align-items: center; */
+    /* align-content: center; */
+}
+
+.projetos{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.pi{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    font-size: 20px;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    background-color: #FA5759;
+}
+
+.piParagrafo{
+    margin-left: 10px;
+}
+
+img {
+    width: 50%;
+}
+
+
+/* Botões */
+
+button {
+    position:relative;
+    padding: 1px 2px;  
+    border: 2px solid gold;
+    background: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 20px;  
+    color: var(--text-color);
+    
+    background-color: var(--btn-color);
+    box-shadow: var(--shadow-color) 2px 2px 22px;
+    border-radius: 10px; 
+    z-index: 0;  
+    overflow: hidden;   
+  }
+
+  /* Listas */
+
+  #listahabilidades{
+      font-size: 30px;
+  }
+
+  ol {
+    list-style: none;
+    font-size: 25px;
+
+    counter-reset: my-awesome-counter;
+  }
+  li {
+    counter-increment: my-awesome-counter;
+    margin: 0.25rem;
+  }
+  li::before {
+    content: counter(my-awesome-counter);
+    background: #662974;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 2rem;
+    color: white;
+    text-align: center;
+    margin-right: 0.5rem;
+  }
+  ol ol li::before {
+    background: #DE51FF;
+  }
+  ol ol ol li::before {
+    background: #EE9EFF;
+  }

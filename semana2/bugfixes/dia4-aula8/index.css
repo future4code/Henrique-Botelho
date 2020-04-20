@@ -140,6 +140,12 @@ td button:focus{
     height: 100px;
 }
 
+input{
+    border: 0px;
+    border-bottom: 2px solid black;
+
+}
+
 
 #back-button {
     background-color: white;

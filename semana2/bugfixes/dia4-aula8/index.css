@@ -112,6 +112,10 @@ table {
     text-align: center;
 }
 
+img{
+    width: 80px;
+}
+
 td button {
     background-color: #fadf63;
     width: 150px;

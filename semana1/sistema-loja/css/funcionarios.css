@@ -1,0 +1,14 @@
+ol {
+	list-style-type: none;
+	counter-reset: li;
+}
+li {
+	font-size: 20px;
+}
+
+li:before {
+  margin-right: 10px;
+  counter-increment: li;
+  content: counter(li, decimal-leading-zero);
+	color: violet;
+}

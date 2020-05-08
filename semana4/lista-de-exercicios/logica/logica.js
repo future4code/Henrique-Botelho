@@ -50,5 +50,5 @@ function numeros(a,b){
     else{
         console.log("A diferença entre eles é ", b - a)
     }
-
+    
 }

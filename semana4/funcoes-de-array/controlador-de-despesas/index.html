@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="cadastro">
+        <h1>Controlador de despesas</h1>
+        <h2>Cadastrar despesa</h2>
+        <div>
+            <label for="valor">Valor</label>
+            <input id="valor" name="pessoa" type="text">
+        </div>
+        <div>
+            <label for="tipo">Tipo</label>
+            <select id="tipo" name="select">
+                <option value="casa">Casa</option> 
+                <option value="viagem" selected>Viagem</option>
+                <option value="outros">Outros</option>
+            </select>
+        </div>
+        <div>
+            <label for="descricao">Descrição</label>
+            <input id="descricao" type="text">
+        </div>
+        <button onclick="salvar()">
+            Cadastrar Despesa
+        </button>
+    </div>
+
+    <div>
+        <h1>Despesas detalhadas</h1>
+        <div>
+            <label for="minimo">Mínimo</label>
+            <input id="minimo" name="minimo" type="text">
+            <label for="maximo">Máximo</label>
+            <input id="maximo" name="maximo" type="text">
+        </div>
+        <button onclick="detalha()">Imprimir</button>
+    </div>
+
+</body>
+</html>

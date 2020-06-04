@@ -7,6 +7,7 @@ export class SecaoComentario extends Component {
 	}
 
 	onChangeComentario(event) {
+		return
 		this.setState({
 			comentario: "teste"
 		})

@@ -12,21 +12,21 @@ function Routes() {
     <BrowserRouter>
       <Switch>
         <Route exact path="/">
-          <HomePage />
+          <LoginPage />
         </Route>
         <Route exact path="/subscribe-form">
           <SubscribePage />
         </Route>
-        <Route exact path="/login">
-          <LoginPage />
+        <Route exact path="/home">
+          <HomePage />
         </Route>
-        <Route exact path="/trips/:create">
+        <Route exact path="/trips/create/">
           <CreateTripPage />
         </Route>
-        <Route exact path="/trips/:list">
+        <Route exact path="/trips/list/">
           <ListTripsPage />
         </Route>
-        <Route exact path="/trips/:details">
+        <Route exact path="/trips/details">
           <TripDetailsPage />
         </Route>
       </Switch>

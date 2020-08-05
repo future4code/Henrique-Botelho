@@ -1,0 +1,21 @@
+a. *Seria possível imprimir a senha (`password`) atrelada a essa instância?*
+
+Não pois é privado
+
+b. *Quantas vezes a mensagem `"Chamando o construtor da classe User"` foi impressa no terminal?*
+
+Apenas uma
+
+2)
+
+a. *Quantas vezes a mensagem `"Chamando o construtor da classe Customer"` foi impressa no terminal?* 
+
+1
+
+b. *Quantas vezes a mensagem `"Chamando o construtor da classe User"` foi impressa no terminal? Por quê?*
+
+1 pq ele é chamado pela Customer
+
+3) b 
+
+não pq é privado

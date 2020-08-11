@@ -1,0 +1,55 @@
+# Exercícios
+
+a) 
+id VARCHAR(255) PRIMARY KEY, **cria uma chave primária do tipo varchar de 255**
+name VARCHAR (255) NOT NULL, **cria um atributo chamado name do tipo varchar 255 que não pode ser nulo**
+salary FLOAT NOT NULL, **cria um atributo salário do tipo FLOAT que não pode ser nulo**  
+birth_date DATE NOT NULL, **cria um atributo chamado birth_date do tipo DATE que não pode ser nulo**
+gender VARCHAR(6) NOT NULL **cria um atributo chamado genter do tipo VARCHAR de tamanho 6 que não pode ser nulo.**
+
+b) mostra os bancos de dados criados e as tabelas criadas;
+
+c) O comando SHOW Actor não pega pois a sintaxe está errada.
+
+## Exercício 2
+
+a) 
+INSERT INTO Actor(id, name, salary, birth_date, gender)
+VALUES(
+	"002",
+    "Glória Pires",
+    "1200",
+    "1993-09-23",
+    "female"
+);
+b)
+Entrada duplicada para chave primária. Acontece que a chave primária deve ser única na tabela.
+
+## Exercício 3
+SELECT * from Actor WHERE gender = "female";
+SELECT salary from Actor WHERE name = "Tony Ramos";
+SELECT * from Actor WHERE gender = "invalid";
+SELECT * from Actor WHERE salary <= 500000;
+
+## Exercício 4
+
+a) Funciona selecionando aquilo que começa com A e Termina com J e salário > 300000.
+b) SELECT * FROM Actor WHERE (name NOT LIKE "A%" OR name LIKE "J%") AND salary > 300000
+c) SELECT * FROM Actor WHERE name LIKE "%g%" OR name LIKE "%G%";
+## Exercício 5
+a) CREATE TABLE Movie ( id VARCHAR(255) PRIMARY KEY, title VARCHAR(255) NOT NULL UNIQUE, synopsis TEXT NOT NULL, release_Date DATE NOT NULL, rating INT NOT NULL )
+
+b) INSERT INTO Movie (id, title, synopsis, release_date, rating) VALUES( "004", "Deus é Brasileiro", "Cansado da humanidade, Deus resolve tirar férias para descansar e procura alguém no Brasil capaz de substituí-lo. O borracheiro e pescador Taoca e a solitária Madá deverão guiá-lo até Quincas das Mulas, candidato de Deus a santo.", "2003-01-31", 9 )
+
+## Exercício 6
+
+a) SELECT id, title, rating FROM Movie WHERE id = "004";
+b) SELECT * FROM Movie WHERE name = "Deus é Brasileiro";
+c) SELECT id, title, synopsis FROM Movie WHERE rating > 7;
+
+## Exercício 7
+
+a) SELECT * FROM Movie WHERE title LIKE "%vida%";
+b) SELECT * FROM Movie WHERE title LIKE "%TERMO DE BUSCA%" OR synopsis LIKE "%TERMO DE BUSCA%";
+c) SELECT * FROM MOVIE WHERE release_date < "2020-05-04";
+d) SELECT * FROM MOVIE WHERE release_date < "2020-05-04" AND (title LIKE "%TERMO DE BUSCA%" OR synopsis LIKE "%TERMO DE BUSCA%") AND rating > 7;

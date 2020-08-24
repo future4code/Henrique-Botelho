@@ -1,0 +1,22 @@
+{
+  "name": "wfs06-s16",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@types/express": "^4.17.0",
+    "@types/node": "^14.0.27",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.0",
+    "knex": "^0.21.4",
+    "mysql": "^2.18.1",
+    "net": "^1.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node ./src/index.ts"
+  },
+  "author": "",
+  "license": "ISC"
+}

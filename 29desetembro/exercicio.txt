@@ -1,0 +1,6 @@
+Linear O(n)
+Linear O(n)
+Constante O(1)
+Quadrático O(n^2)
+
+O(n^2) > O(n) > O(1)

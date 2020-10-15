@@ -1,0 +1,17 @@
+var smallerNumbersThanCurrent = function (nums) {
+  let lista = [];
+  let menoresQueX = 0;
+  for (let i = 0; i < nums.length; i++) {
+    let x = nums[i];
+    for (let j = 0; j < nums.length; j++) {
+      if (nums[j] < x) {
+        menoresQueX++;
+      }
+    }
+    lista.push(menoresQueX);
+    menoresQueX = 0;
+  }
+  return lista;
+};
+
+console.log(smallerNumbersThanCurrent([8, 1, 2, 2, 3]));
